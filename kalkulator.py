@@ -1,16 +1,20 @@
 print("Selamat datang di kalkulator sederhana!")
 
 def kecepatan():
-    jarak = int(input("Masukkan jarak (meter)= "))
-    waktu = int(input("Masukkan waktu (sekon)= "))
+    jarak = int(input("Masukkan jarak (meter) = "))
+    waktu = int(input("Masukkan waktu (sekon) = "))
     kecepatan = jarak * waktu 
-    print(f"kecepatannya adalah: {kecepatan}m/s")
+    print(f"kecepatannya adalah = {kecepatan}m/s")
+    print("===================================")
+    print("")
     
 def luas_persegi_panjang():
     panjang = int(input("Masukkan panjang persegi panjang = "))
     lebar = int(input("Masukkan lebar persegi panjang = "))
     luas = panjang * lebar
-    print(f"luas persegi panjang adalah: {luas} m")
+    print(f"luas persegi panjang adalah = {luas} m")
+    print("===================================")
+    print("")
     
 def kalkulator():
     n1 = int(input("Masukkan bilangan bulat pertama = "))
@@ -19,50 +23,62 @@ def kalkulator():
    
     if operator == '+':
         hasil = n1 + n2
-        print(f'hasil dari penjumlahan adalah: {hasil}')
+        print(f'hasil dari penjumlahan adalah = {hasil}')
     elif operator == '-':
         hasil = n1 - n2
-        print(f'hasil dari pengurangan adalah: {hasil}')
+        print(f'hasil dari pengurangan adalah = {hasil}')
     elif operator == '*':
         hasil = n1 * n2
-        print(f'hasil dari perkalian adalah: {hasil}')
+        print(f'hasil dari perkalian adalah = {hasil}')
     elif operator == '//':
         hasil = n1 // n2
-        print(f"hasil dari pembagian adalah: {hasil}")
+        print(f"hasil dari pembagian adalah = {hasil}")
     else:
         print('operator tidak valid')
-
-
-def luas_segitiga():
-    alas = float(input('masukkan alas : '))
-    tinggi = float(input('masukkan tinggi : '))
-    luas = 0.5 * (alas * tinggi)
-    print(f'luas segitiga adalah: {luas}')
+    print("===================================")
+    print("")
     
 
+def luas_segitiga():
+    alas = float(input('Masukkan alas = '))
+    tinggi = float(input('Masukkan tinggi = '))
+    luas = 0.5 * (alas * tinggi)
+    print(f'Luas Segitiga adalah = {luas}')
+    print("===================================")
+    print("")
+
 def lingkaran():
-    jari_jari = float(input('masukkan jari-jari lingkaran : '))
+    jari_jari = float(input('Masukkan jari-jari lingkaran = '))
     luas_lingkaran = 3.14 * jari_jari**2
-    print(f'luas lingkaran adalah: {luas_lingkaran}')
+    print(f'luas lingkaran adalah = {luas_lingkaran}')
+    print("===================================")
+    print("")
     
 def jajar_genjang():
     alas = int(input("Masukkan alas = "))
     tinggi = int(input("Masukkan tinggi = "))
     luas_jajar_genjang = alas * tinggi 
-    print(f'Luas jajar genjang adalah: {luas_jajar_genjang}')
+    print(f'Luas jajar genjang adalah = {luas_jajar_genjang}')
+    print("===================================")
+    print("")
+     
 
 def layang_layang():
     diagonal1 = float(input("Masukkan diagonal 1 = "))
     diagonal2 = float(input("Masukkan diagonal 2 = "))
-    luas_layang_layang = float(diagonal1 * diagonal2) * 0.5
-    print(f'Luas layang-layang adalah: {luas_layang_layang}') 
+    luas_layang = float(diagonal1 * diagonal2) * 0.5
+    print(f'Luas layang-layang adalah = {luas_layang}')
+    print("===================================")
+    print("")
     
 def volume_balok():
     panjang = int(input("Masukkan Panjang Balok = "))
     lebar = int(input("Masukkan Lebar Balok = "))
     tinggi = int(input("Masukkan Tinggi Balok = "))
     volume = int(panjang * lebar * tinggi)
-    print(f'Volume balok adalah: {volume}')
+    print(f"Volume balok adalah = {volume}")
+    print("===================================")
+    print("")
     
 while True:
     pilih = int(input(f"""Pilihan:
@@ -76,6 +92,7 @@ while True:
     8.Volume Balok
     9.exit/keluar
     pilih : """))
+    print("")
     
     if(pilih == 1):
        kecepatan()
