@@ -115,3 +115,4 @@ while True:
         break
     else:
         print("input yang dimasukkan salah, ulangi")
+        print("")
